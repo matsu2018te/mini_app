@@ -1,0 +1,13 @@
+<div class="header6">
+  <div class="header_title">
+    Edit
+  </div>
+</div>
+
+<div class="contents row">
+  <%= form_for(@message) do |f| %>
+    <%= f.label :Edit %><br />
+    <%= f.text_area :text, placeholder: "review" %>
+    <%= f.submit "SENT" %>
+  <% end %>
+</div>

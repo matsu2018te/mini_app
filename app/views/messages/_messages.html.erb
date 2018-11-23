@@ -1,0 +1,14 @@
+<div class="message">
+    <div class="title">TITLE</div><br>
+    <%= message.name %><br>
+    <div class="text">REVIEW</div><br>
+    <%= message.text %>
+
+    <%if user_signed_in? %>
+
+      <div class="delete">
+      <%= link_to 'EDIT', "/messages/#{message.id}/edit", method: :get, class: "btn btn-large"%>
+      <%= link_to 'DELETE', "/messages/#{message.id}", method: :delete, class: "btn btn-large"%>
+      </div>
+    <% end %>
+  </div><br>

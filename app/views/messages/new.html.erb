@@ -1,0 +1,22 @@
+<div class="header2">
+  <div class="header_title">
+    Post!
+  </div>
+</div>
+
+<div class="contents row">
+  <div class="container">
+    <%= form_for (@messages) do |f| %>
+      <%= f.label :Title %><br />
+      <%= f.text_field :name, placeholder: "name"%><br />
+      <%= f.label :Review %><br />
+      <%= f.text_area :text, placeholder: "review" %><br />
+      <%= f.submit "SENT"%>
+    <% end %>
+  </div>
+</div>
+
+<footer>
+  copylight : matsumoto
+</footer>
+
